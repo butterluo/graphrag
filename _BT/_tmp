@@ -1,4 +1,0 @@
-curl https://aoai-tst1.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview\
-  -H 'Content-Type: application/json' \
-  -H 'api-key: ab31f8caee164b7391f761955cdf0904' \
-  -d '{"input": "Sample Document goes here"}'
