@@ -26,7 +26,7 @@ class Entity(Named):
     """The semantic (i.e. text) embedding of the entity (optional)."""
 
     graph_embedding: list[float] | None = None
-    """The graph embedding of the entity, likely from node2vec (optional)."""
+    """The graph embedding of the entity, likely from node2vec (optional). @# 这个应该是来自 index/verbs/graph/embed/embed_graph.py>./strategies/node_2_vec.py>index/graph/embedding/embedding.py>graspologic.embed.node2vec_embed()使用类似wrd2vec的算法做nde2vec"""
 
     community_ids: list[str] | None = None
     """The community IDs of the entity (optional)."""

@@ -128,11 +128,11 @@ flowchart LR
 
 ### Community Detection
 
-In this step, we generate a hierarchy of entity communities using the Hierarchical Leiden Algorithm. This method will apply a recursive community-clustering to our graph until we reach a community-size threshold. This will allow us to understand the community structure of our graph and provide a way to navigate and summarize the graph at different levels of granularity.
+In this step, we generate a hierarchy of entity communities using the Hierarchical Leiden Algorithm. This method will apply a recursive community-clustering to our graph until we reach a community-size threshold. This will allow us to understand the community structure of our graph and provide a way to navigate and summarize the graph at different levels of granularity. @#性能 可以从效果和性能上优化???
 
 ### Graph Embedding
 
-In this step, we generate a vector representation of our graph using the Node2Vec algorithm. This will allow us to understand the implicit structure of our graph and provide an additional vector-space in which to search for related concepts during our query phase.
+In this step, we generate a vector representation of our graph using the Node2Vec algorithm. This will allow us to understand the implicit structure of our graph and provide an additional vector-space in which to search for related concepts during our query phase. @# entity.py中保存了graph_emb, 应该是来自 index/verbs/graph/embed/embed_graph.py>./strategies/node_2_vec.py>index/graph/embedding/embedding.py>graspologic.embed.node2vec_embed()使用类似wrd2vec的算法做nde2vec @#性能 这个grh emb算法有点弱鸡,可以从效果和性能上优化???
 
 ### Graph Tables Emission
 

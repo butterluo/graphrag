@@ -48,6 +48,7 @@ venv/
 
 
 .env
+settings.yaml
 build.zip
 
 .turbo
