@@ -39,7 +39,7 @@ def build_steps(
             "input": {"source": "workflow:create_base_text_units"},
         },
         {
-            "verb": "snapshot",
+            "verb": "snapshot",                         #"""Load strategy method definition."""类似暂存缓存中间结果
             "enabled": raw_entity_snapshot_enabled,
             "args": {
                 "name": "raw_extracted_entities",

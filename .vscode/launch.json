@@ -7,6 +7,17 @@
 			"request": "attach",
 			"port": 9229,
 			"preLaunchTask": "func: host start"
-		}
+		},
+    {
+      "name": "Python Debugger: Module",
+      "type": "debugpy",
+      "request": "launch",
+      // "python": "${command:python.interpreterPath}",
+      // "cwd": "/home/luogang/anaconda3/lib/python3.12/site-packages/",
+      "module": "graphrag.index",
+      "args": ["-v", "--root","/home/luogang/SRC/NLP/LLM/RAG/graphrag/_BT/ragtest2"],
+      "stopOnEntry": true,
+      "justMyCode": false
+    }
 	]
 }

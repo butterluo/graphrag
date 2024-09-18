@@ -68,3 +68,5 @@ ragtest/
 .ragtest/
 .pipelines
 .pipeline
+
+_BT/

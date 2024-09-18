@@ -186,7 +186,7 @@ def _document_workflows(
     )
     return [
         PipelineWorkflowReference(
-            name=create_base_documents,
+            name=create_base_documents, #@# graphrag/index/workflows/v1/中各个相关的py文件中的workflow_name
             config={
                 "document_attribute_columns": list(
                     {*(settings.input.document_attribute_columns)}
